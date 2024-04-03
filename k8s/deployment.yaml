@@ -59,7 +59,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: fabricioveronez/kube-news:9
+          image: murilopaixao2/nodejsteste:latest
           ports:
           - containerPort: 8080
           env:
@@ -82,4 +82,4 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-  type: LoadBalancer
+  type: NodePort
